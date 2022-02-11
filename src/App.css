@@ -11,14 +11,14 @@
   justify-content: center;
   box-shadow: rgba(17, 22, 26, 0.16) 0px 4px 8px 0px, rgba(17, 22, 26, 0.08) 0px 4px 8px 0px, rgba(17, 22, 26, 0.04) 0px 8px 16px 0px;
   border-radius: 0.25rem;
-  padding: 5px;
+  padding: 3px;
   margin: 1%;
 }
 
 .grid {
   text-align: center;
   justify-content: center;
-  background-color: rgba(176, 181, 216, 0.1);
+  background-color: rgba(176, 181, 216, 0.7);
   box-shadow: rgba(17, 22, 26, 0.16) 0px 4px 8px 0px, rgba(17, 22, 26, 0.08) 0px 4px 8px 0px, rgba(17, 22, 26, 0.04) 0px 8px 16px 0px;
   border-radius: 0.25rem;
   padding: 5px;
