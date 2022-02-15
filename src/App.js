@@ -6,6 +6,10 @@ import {
 import { useState } from 'react'
 import ImageList from './components/mui/ImageList'
 
+// About
+import About from './components/About'
+import Home from './components/Home'
+
 export default function App() {
   const [home, setHome] = useState(true)
   const [about, setAbout] = useState(false)
@@ -51,7 +55,7 @@ function Nav (props) {
     <Grid container className='nav' sx={{ textAlign: 'center', justifyContent: 'center' }}>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ textAlign: 'center', justifyContent: 'center' }}>
         <Stack direction='row' divider={<Divider />} spacing={1} sx={{ textAlign: 'center', justifyContent: 'center', bgcolor: 'white' }} >
-          <Grid item xs={1} sm={-1} md={0} lg={1} xl={1}>
+          <Grid item xs={0.5} sm={0.5} md={0.5} lg={1} xl={1}>
             <Avatar alt='logo-ami' src='./logoAmi.png' />
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={10} xl={10}>
@@ -61,76 +65,12 @@ function Nav (props) {
             <Button size='medium' onClick={() => props.teams()}>Teams</Button>
             <Button size='medium' onClick={() => props.contact()}>Contact</Button>
           </Grid>
-          <Grid item container xs={12} sm={12} md={12} lg={1} xl={1} sx={{ textAlign: 'flex-end', justifyContent: 'flex-end'}}>
+          <Grid item container xs={0.5} sm={0.5} md={0.5} lg={1} xl={1} sx={{ textAlign: 'flex-end', justifyContent: 'flex-end'}}>
             <Grid item>
               <Avatar sx={{ border:1, borderColor: 'red'}}>Off</Avatar>
             </Grid>
           </Grid>
         </Stack>
-      </Grid>
-    </Grid>
-  );
-}
-
-function Home () {
-  return (
-    <div bgcolor='blue'>
-      <h1>AMI</h1>
-      <h6>ANKIZY MIVOATRA no IFANDRIMBONANA</h6>
-      <p>AMI is a french word for 'FRIEND', we are carring children that are out of money to school and help them to finish school. </p>
-      {/*<Avatar alt='logo-ami' src='./logoAmi.png' sx={{ width: 200, height:200, border:5, borderColor: 'green'}}/>*/}
-      <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={10} ><img src='./images/home.jpg' style={{ }}/></Grid>
-      </Grid>
-    </div>
-  );
-}
-
-function About () {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
-}
-
-function Projects () {
-  return (
-    <Grid container spacing={1}>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
-        <h2>Projects</h2>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
-          <h4><em>Actions</em></h4>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
-          <img src='enf1.jpg' style={{ width: '100%', height: '100%'}}/>
-        </Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
-          <h4><em>Actions</em></h4>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
-          <img src='1.jpg' style={{ width: '100%', height: '100%'}}/>
-        </Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
-          <h4><em>Actions</em></h4>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
-          <img src='2.jpg' style={{ width: '100%', height: '100%'}}/>
-        </Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
-          <h4><em>Actions</em></h4>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
-          <img src='3.jpg' style={{ width: '100%', height: '100%'}}/>
-        </Grid>
       </Grid>
     </Grid>
   );
