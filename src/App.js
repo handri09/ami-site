@@ -78,7 +78,10 @@ function Home () {
       <h1>AMI</h1>
       <h6>ANKIZY MIVOATRA no IFANDRIMBONANA</h6>
       <p>AMI is a french word for 'FRIEND', we are carring children that are out of money to school and help them to finish school. </p>
-      <Avatar alt='logo-ami' src='./logoAmi.png' sx={{ width: 200, height:200, border:5, borderColor: 'green'}}/>
+      {/*<Avatar alt='logo-ami' src='./logoAmi.png' sx={{ width: 200, height:200, border:5, borderColor: 'green'}}/>*/}
+      <Grid container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={10} ><img src='./images/home.jpg' style={{ }}/></Grid>
+      </Grid>
     </div>
   );
 }
@@ -93,16 +96,40 @@ function About () {
 
 function Projects () {
   return (
-    <Grid container>
+    <Grid container spacing={1}>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
         <h2>Projects</h2>
       </Grid>
       <Grid container>
-        <Grid item xs={12} sm={12} md={10} lg={10} xl={9}>
+        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
           <h4><em>Actions</em></h4>
         </Grid>
-        <Grid item xs={12} sm={12} md={2} lg={2} xl={3}>
+        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
           <img src='enf1.jpg' style={{ width: '100%', height: '100%'}}/>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
+          <h4><em>Actions</em></h4>
+        </Grid>
+        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
+          <img src='1.jpg' style={{ width: '100%', height: '100%'}}/>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
+          <h4><em>Actions</em></h4>
+        </Grid>
+        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
+          <img src='2.jpg' style={{ width: '100%', height: '100%'}}/>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} sm={8} md={10} lg={10} xl={10}>
+          <h4><em>Actions</em></h4>
+        </Grid>
+        <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
+          <img src='3.jpg' style={{ width: '100%', height: '100%'}}/>
         </Grid>
       </Grid>
     </Grid>
@@ -120,8 +147,17 @@ function Teams () {
 
 function Contact () {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <Grid container spacing={2}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
+        <h1>Contact</h1>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} color='primary.dark' >
+        <h2>Form</h2>
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} color='secondary.dark' >
+        <h2>picture</h2>
+        <img src='./images/teams.JPG' style={{ width: '100%'}}/>
+      </Grid>
+    </Grid>
   );
 }
