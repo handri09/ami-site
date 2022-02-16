@@ -39,14 +39,12 @@ export default function App() {
         teams={()=>{ onClear(); setTeams(true)}}     
         contact={()=>{ onClear(); setContact(true)}} 
         />
-
-      <Grid container className='grid'>
-        {home ? <Home/> : ''}
-        {about ? <About/> : ''}
-        {projects ? <Projects/> : ''}
-        {teams ? <Teams/> : ''}
-        {contact ? <Contact/> : ''}
-      </Grid>
+        
+      {home ? <Home/> : ''}
+      {about ? <About/> : ''}
+      {projects ? <Projects/> : ''}
+      {teams ? <Teams/> : ''}
+      {contact ? <Contact/> : ''}
 
     </Container>
   );

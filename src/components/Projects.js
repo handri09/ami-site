@@ -4,18 +4,6 @@ import { actus } from '../utils/_data'
 import AlignList from './mui/AlignListItem'
 import { AspectRatio } from '@chakra-ui/react'
 
-// function Projects () {
-//   return (
-//     <Grid container spacing={2} sx={{ width:'100%' }}>
-//       {actus.map(actu => (
-//         <Grid item xs={12} sm={3} md={2} lg={1.5} xl={1}>
-//           <img src={actu.picture} style={{ width: '100%', height: '100%'}}/>
-//         </Grid>
-//       ))}
-//     </Grid>
-//   );
-// }
-
 function Projects () {
   return (
     <Grid container spacing={2} sx={{ width:'100%' }}>
