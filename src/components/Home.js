@@ -1,11 +1,20 @@
 import React from 'react';
 import { Grid } from '@mui/material'
+import { AspectRatio } from '@chakra-ui/react'
+import './styles/home.css';
 
 function Home () {
   return (
-    <Grid container sx={{ width: '80%'}}>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} ><img src='./images/home.jpg' style={{ width:'100%' }}/></Grid>
-    </Grid>
+    <div className='block'>
+      <h1>TEST</h1>
+      <AspectRatio ratio={1} className='video'> {/*maxW='560px'}*/}
+        <iframe
+          title='naruto'
+          src='https://www.youtube.com/embed/QMyEdgGEfIg'
+          allowFullScreen
+        />
+      </AspectRatio>
+    </div>
   );
 }
 

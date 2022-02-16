@@ -19,12 +19,11 @@ import { AspectRatio } from '@chakra-ui/react'
 function Projects () {
   return (
     <Grid container spacing={2} sx={{ width:'100%' }}>
-
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <AspectRatio maxW='560px' ratio={1}>
           <iframe
             title='naruto'
-            src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+            src='https://www.youtube.com/embed/QMyEdgGEfIg'
             allowFullScreen
           />
         </AspectRatio>
