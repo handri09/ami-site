@@ -4,11 +4,13 @@ import {
   Button, Avatar
  } from '@mui/material'
 import { useState } from 'react'
-import ImageList from './components/mui/ImageList'
 
 // About
 import About from './components/About'
 import Home from './components/Home'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Teams from './components/Teams'
 
 export default function App() {
   const [home, setHome] = useState(true)
@@ -76,28 +78,4 @@ function Nav (props) {
   );
 }
 
-function Teams () {
-  return (
-    <div>
-      <h1>Teams</h1>
-      <ImageList />
-    </div>
-  );
-}
 
-function Contact () {
-  return (
-    <Grid container spacing={2}>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
-        <h1>Contact</h1>
-      </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} color='primary.dark' >
-        <h2>Form</h2>
-      </Grid>
-      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} color='secondary.dark' >
-        <h2>picture</h2>
-        <img src='./images/teams.JPG' style={{ width: '100%'}}/>
-      </Grid>
-    </Grid>
-  );
-}
