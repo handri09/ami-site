@@ -1,39 +1,44 @@
 import React from 'react';
-import { Grid } from '@mui/material'
+import { Grid, Avatar } from '@mui/material'
 import { AspectRatio, Text, Stack, Heading } from '@chakra-ui/react'
 import './styles/home.css';
-import Motion from './antMui/motion'
 
 function Home () {
   return (
-    <Grid container className='block'>
-      <Grid xs={12} sm={6} md={5} lg={4} xl={4}>
-        <AspectRatio ratio={1}>
-            <iframe
-              title='naruto'
-              src='https://www.youtube.com/embed/QMyEdgGEfIg'
-              allowFullScreen
-            />
-          </AspectRatio>
-      </Grid>
-      
-      <Grid xs={12} sm={6} md={7} lg={8} xl={8}  sx={{ textAlign: 'left', padding: '15px'}}>
-        <Stack spacing={2}>
-          <Heading as='h1' size='4xl' isTruncated>
-            Léonce, AMI's President
-          </Heading>
-        </Stack>
+    <>
+    <Grid container className='block' >
 
-        <Stack spacing={3}>
-          <Text fontSize='6xl'>
-            AMI is aim to help the kids in needs, whether a scholarship or equipment scholars. 
-            One of the reason why we decided to create AMI is that we found that many children want to continue the school but 
-            their parents is having problem on investing in the schools.
-          </Text>
-        </Stack>
-        <Motion /> 
+        <Grid xs={12} sm={6} md={5} lg={4} xl={4} className='vid'>
+          <AspectRatio ratio={1}>
+              <iframe
+                title='naruto'
+                src='https://www.youtube.com/embed/QMyEdgGEfIg'
+                allowFullScreen
+              />
+            </AspectRatio>
+        </Grid>
+        
+        <Grid xs={12} sm={6} md={6.5} lg={7.5} xl={7.5}  sx={{ textAlign: 'left', padding: '15px'}} className='vid'>
+          <Stack className='vid'>
+            <img alt='logo-ami' src='./logoAmi.png' />
+          </Stack>
+          <Stack spacing={2}>
+            <Heading as='h1' size='4xl' isTruncated>
+              Léonce, AMI's President
+            </Heading>
+          </Stack>
+
+          <Stack spacing={3}>
+            <Text fontSize='6xl'>
+              AMI is aim to help the kids in needs, whether a scholarship or equipment scholars. 
+              One of the reason why we decided to create AMI is that we found that many children want to continue the school but 
+              their parents is having problem on investing in the schools.
+            </Text>
+          </Stack>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
+    
   );
 }
 

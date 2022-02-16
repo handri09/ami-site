@@ -55,21 +55,21 @@ function Nav (props) {
     <Grid container className='nav' sx={{ textAlign: 'center', justifyContent: 'center' }}>
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ textAlign: 'center', justifyContent: 'center' }}>
         <Stack direction='row' divider={<Divider />} spacing={1} sx={{ textAlign: 'center', justifyContent: 'center', bgcolor: 'white' }} >
-          <Grid item xs={0.5} sm={0.5} md={0.5} lg={1} xl={1}>
+          {/*<Grid item xs={0.5} sm={0.5} md={0.5} lg={1} xl={1}>
             <Avatar alt='logo-ami' src='./logoAmi.png' />
-          </Grid>
+          </Grid>*/}
           <Grid item xs={12} sm={12} md={12} lg={10} xl={10}>
-            <Button size='medium' onClick={() => props.home()}>Home</Button>
-            <Button size='medium' onClick={() => props.about()}>About</Button>
-            <Button size='medium' onClick={() => props.projects()}>Projects</Button>
-            <Button size='medium' onClick={() => props.teams()}>Teams</Button>
-            <Button size='medium' onClick={() => props.contact()}>Contact</Button>
+            <Button size='small' onClick={() => props.home()}>Home</Button>
+            <Button size='small' onClick={() => props.about()}>About</Button>
+            <Button size='small' onClick={() => props.projects()}>Projects</Button>
+            <Button size='small' onClick={() => props.teams()}>Teams</Button>
+            <Button size='small' onClick={() => props.contact()}>Contact</Button>
           </Grid>
-          <Grid item container xs={0.5} sm={0.5} md={0.5} lg={1} xl={1} sx={{ textAlign: 'flex-end', justifyContent: 'flex-end'}}>
+          {/*<Grid item container xs={0.5} sm={0.5} md={0.5} lg={1} xl={1} sx={{ textAlign: 'flex-end', justifyContent: 'flex-end'}}>
             <Grid item>
               <Avatar sx={{ border:1, borderColor: 'red'}}>Off</Avatar>
             </Grid>
-          </Grid>
+        </Grid>*/}
         </Stack>
       </Grid>
     </Grid>
