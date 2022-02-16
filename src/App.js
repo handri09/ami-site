@@ -27,19 +27,19 @@ export default function App() {
     return true
   }
   return (
-    <Container maxWidth='xxl' sx={{ textAlign: 'center' }}>
+    <Container maxWidth='lg' sx={{ textAlign: 'center' }}>
       <Nav 
         home={()=>{ 
           onClear()
           setHome(true)
         }}
 
-        about={()=>{ onClear(); setAbout(true)}} 
-        projects={()=>{onClear(); setProjects(true)}} 
-        teams={()=>{ onClear(); setTeams(true)}}     
-        contact={()=>{ onClear(); setContact(true)}} 
+        about={() => { onClear(); setAbout(true)}} 
+        projects={() => {onClear(); setProjects(true)}} 
+        teams={() => { onClear(); setTeams(true)}}     
+        contact={() => { onClear(); setContact(true)}} 
         />
-        
+
       {home ? <Home/> : ''}
       {about ? <About/> : ''}
       {projects ? <Projects/> : ''}
