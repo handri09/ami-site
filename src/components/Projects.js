@@ -7,13 +7,11 @@ import './styles/projects.css'
 import { Text, Stack, Heading } from '@chakra-ui/react'
 import { getActions } from '../utils/api'
 import { useEffect, useState } from 'react'
-
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
-
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 
 const Input = styled('input')({
@@ -40,29 +38,32 @@ function Projects () {
   return (
     <Grid container className='block' >
       <Grid container className='vid'>
-        <h1>Hello</h1>
-      </Grid>
-
-      <Grid container className='vid'>
         <form action='https://caj6tw.deta.dev/upload' encType='multipart/form-data' method='post'>
           <label htmlFor="icon-button-file">
             <Input accept="image/*" id="icon-button-file" name='file' type='file' onChange={(e) => setFile(e.target.value.split('\\')[2])}/>
-            <TextField fullWidth label="Name" id="fullWidth" onChange={(e) => setName(e.target.value)}/>
+            <TextField 
+              fullWidth 
+              label="Name" 
+              id="fullWidth" 
+              onChange={(e) => setName(e.target.value)}
+              style={{ width: '80%' }}
+              />
             <TextareaAutosize
-              maxRows={100}
+              maxRows={4}
               aria-label="maximum height"
               placeholder="Maximum 4 rows"
               defaultValue="More Detail, Story"
-              style={{ width: '100%' }}
+              style={{ width: '80%', height: '40%', marginTop:'3%', marginBottom:'3%' }}
             />
             <Button variant="contained" component="span" endIcon={<PhotoCamera />}>
               Upload
             </Button>{`${fileName}`}
-          </label>
-          <br/>
+            
           <Button 
             disabled={!fileName ? (!name && true ) : false}
             type='submit' endIcon={<SendIcon />} >Send</Button>
+          </label>
+          <br/>
         </form>
       </Grid>
 

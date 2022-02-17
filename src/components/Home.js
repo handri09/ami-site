@@ -26,9 +26,18 @@ function Home () {
                   Léonce, AMI's President
                 </Heading>
                 <Text fontSize='6xl'>
-                  AMI is aim to help the kids in needs, whether a scholarship or equipment scholars. 
-                  One of the reason why we decided to create AMI is that we found that many children want to continue the school but 
-                  their parents is having problem on investing in the schools.
+                  AMI is an association of young people living at Ambohitsilaozana in Madagascar. 
+                  The association aim to help the kids in needs whether in terms of scholarship or schools equipments. 
+                  One of the reason why AMI is created is, many children stoped school due to familly issue, sometimes lack motivation or not enough many to pursue the school.
+                  Then AMI was created to help those kids with what we have.
+                </Text>
+                <Text fontSize='6xl'>
+                  If you may help, below is the IBAN
+                </Text>
+                <Text fontSize='6xl'>
+                  IBAN: MG 46 00005 0001 3729 5063 0001 80
+                  Domiciliation: AMBATONDRAZAKA BNI
+                  Titulaire: ASSOCIATION AMI - ANKIZY MIVOATRA NO IFANDROMBONANA
                 </Text>
               </Stack>
             </Grid>

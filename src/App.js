@@ -60,8 +60,8 @@ function Nav (props) {
           </Grid>*/}
           <Grid item xs={12} sm={12} md={12} lg={10} xl={10}>
             <Button size='small' onClick={() => props.home()}>Home</Button>
-            <Button size='small' onClick={() => props.about()}>About</Button>
-            <Button size='small' onClick={() => props.projects()}>Projects</Button>
+            {/*<Button size='small' onClick={() => props.about()}>About</Button>*/}
+            <Button size='small' onClick={() => props.projects()}>Activities</Button>
             <Button size='small' onClick={() => props.teams()}>Teams</Button>
             <Button size='small' onClick={() => props.contact()}>Contact</Button>
           </Grid>
