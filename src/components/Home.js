@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Avatar } from '@mui/material'
-import { AspectRatio, Text, Stack, Heading } from '@chakra-ui/react'
+import { AspectRatio, Text, Stack, Heading, Image } from '@chakra-ui/react'
 import './styles/home.css';
 
 function Home () {
@@ -11,7 +11,7 @@ function Home () {
         <Grid xs={12} sm={6} md={5} lg={4} xl={4} className='vid'>
           <AspectRatio ratio={1}>
               <iframe
-                title='naruto'
+                title='Léonce'
                 src='https://www.youtube.com/embed/QMyEdgGEfIg'
                 allowFullScreen
               />
@@ -38,6 +38,7 @@ function Home () {
             </Grid>
           </Grid>
         </Grid>
+
       </Grid>
     </>
     
