@@ -5,7 +5,7 @@ import AlignList from './mui/AlignListItem'
 import { AspectRatio } from '@chakra-ui/react'
 import './styles/projects.css'
 import { Text, Stack, Heading } from '@chakra-ui/react'
-import { getActions } from '../utils/api'
+import { getActions, addAction } from '../utils/api'
 import { useEffect, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
@@ -23,6 +23,8 @@ function Projects () {
   const [actionsS, setActions] = useState([])
   const [name, setName] = useState('')
   const [fileName, setFile] = useState('')
+  const [story, setStory] = useState('')
+  const [send, setSend] = useState(false)
   useEffect(() => {
     getActions()
       .then(actions => {
@@ -34,6 +36,16 @@ function Projects () {
     console.log(name)
   }, [name])
 
+  useEffect(() => {
+    if (send) {
+      addAction({
+        'name': name,
+        'picture': fileName,
+        'story': story,
+      })
+      setSend(false)
+    }
+  }, [send])
 
   return (
     <Grid container className='block' >
@@ -46,31 +58,32 @@ function Projects () {
               label="Name" 
               id="fullWidth" 
               onChange={(e) => setName(e.target.value)}
-              style={{ width: '80%' }}
+              style={{ width: '95%', margin:'1%' }}
               />
-            <TextareaAutosize
-              maxRows={4}
-              aria-label="maximum height"
-              placeholder="Maximum 4 rows"
-              defaultValue="More Detail, Story"
-              style={{ width: '80%', height: '40%', marginTop:'3%', marginBottom:'3%' }}
-            />
+            <TextField 
+              fullWidth 
+              color='primary'
+              label="Story" 
+              id="fullWidth" 
+              onChange={(e) => setStory(e.target.value)}
+              style={{ width: '95%', margin: '1%' }}
+              />
             <Button variant="contained" component="span" endIcon={<PhotoCamera />}>
               Upload
             </Button>{`${fileName}`}
             
           <Button 
             disabled={!fileName ? (!name && true ) : false}
-            type='submit' endIcon={<SendIcon />} >Send</Button>
+            type='submit' endIcon={<SendIcon />} onClick={(e) => setSend(true)} >Send</Button>
           </label>
           <br/>
         </form>
       </Grid>
 
       {actionsS.map(actu => (
-        <Grid container className='vid' marginTop={1} textAlign='left'>
+        <Grid key={actu.key} container className='vid' marginTop={1} textAlign='left'>
           <Grid item xs={3} sm={2} md={2} lg={2} xl={1}>
-            <img alt={actu.name} src={actu.picture} width='100%' />
+            <img alt={actu.picture} src={actu.picture} width='100%' />
           </Grid>
           <Grid item xs={9} sm={10} md={10} lg={10} xl={11}>
             <Stack spacing={0} padding='5%'>
