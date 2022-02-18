@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ami-site/static/css/main.9158ddc1.css",
-    "main.js": "/ami-site/static/js/main.52309b82.js",
+    "main.js": "/ami-site/static/js/main.7f926938.js",
     "static/js/787.1fde4085.chunk.js": "/ami-site/static/js/787.1fde4085.chunk.js",
     "static/media/pic.jpg": "/ami-site/static/media/pic.e3f395524a63ca719c29.jpg",
     "index.html": "/ami-site/index.html",
     "main.9158ddc1.css.map": "/ami-site/static/css/main.9158ddc1.css.map",
-    "main.52309b82.js.map": "/ami-site/static/js/main.52309b82.js.map",
+    "main.7f926938.js.map": "/ami-site/static/js/main.7f926938.js.map",
     "787.1fde4085.chunk.js.map": "/ami-site/static/js/787.1fde4085.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9158ddc1.css",
-    "static/js/main.52309b82.js"
+    "static/js/main.7f926938.js"
   ]
 }
