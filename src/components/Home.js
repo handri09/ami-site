@@ -8,7 +8,7 @@ function Home () {
     <>
     <Grid container className='block' >
 
-        <Grid xs={12} sm={6} md={5} lg={4} xl={4} className='vid'>
+        <Grid item xs={12} sm={6} md={5} lg={4} xl={4} className='vid'>
           <AspectRatio ratio={1}>
               <iframe
                 title='Léonce'
@@ -18,7 +18,7 @@ function Home () {
             </AspectRatio>
         </Grid>
         
-        <Grid xs={12} sm={6} md={6.5} lg={7} xl={7}  sx={{ textAlign: 'left', padding: '15px'}}>
+        <Grid item xs={12} sm={6} md={6.5} lg={7} xl={7}  sx={{ textAlign: 'left', padding: '15px'}}>
           <Grid container spacing={1}>
             <Grid item xs={12} sm={9} md={9} lg={9} xl={7}>
               <Stack spacing={2}>
