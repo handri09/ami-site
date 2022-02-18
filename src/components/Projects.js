@@ -5,7 +5,7 @@ import AlignList from './mui/AlignListItem'
 import { AspectRatio } from '@chakra-ui/react'
 import './styles/projects.css'
 import { Text, Stack, Heading } from '@chakra-ui/react'
-import { getActions, addAction } from '../utils/api'
+import { getActions, addAction, generateUID } from '../utils/api'
 import { useEffect, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
@@ -17,7 +17,6 @@ import PhotoCamera from '@mui/icons-material/PhotoCamera';
 const Input = styled('input')({
   display: 'none',
 });
-
 
 function Projects () {
   const [actionsS, setActions] = useState([])
@@ -33,10 +32,6 @@ function Projects () {
   }, [actionsS])
 
   useEffect(() => {
-    console.log(name)
-  }, [name])
-
-  useEffect(() => {
     if (send) {
       addAction({
         'name': name,
@@ -50,9 +45,12 @@ function Projects () {
   return (
     <Grid container className='block' >
       <Grid container className='vid'>
-        <form action='https://caj6tw.deta.dev/upload' encType='multipart/form-data' method='post'>
+        <form action='https://caj6tw.deta.dev/upload' encType='multipart/form-data' method='post' >
           <label htmlFor="icon-button-file">
-            <Input accept="image/*" id="icon-button-file" name='file' type='file' onChange={(e) => setFile(e.target.value.split('\\')[2])}/>
+            <Input accept="image/*" id="icon-button-file" name='file' type='file' onChange={(e) => {
+              console.log(e)
+              setFile(e.target.value.split('\\')[2])
+              }}/>
             <TextField 
               fullWidth 
               label="Name" 
