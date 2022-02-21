@@ -8,7 +8,7 @@ function Home () {
     <>
     <Grid container className='block' >
 
-        <Grid item xs={12} sm={6} md={5} lg={4} xl={4} className='vid'>
+        <Grid item xs={12} sm={5} md={5} lg={4} xl={4} className='vid'>
           <AspectRatio ratio={1}>
               <iframe
                 title='Léonce'
@@ -18,7 +18,7 @@ function Home () {
             </AspectRatio>
         </Grid>
         
-        <Grid item xs={12} sm={6} md={6.5} lg={7} xl={7}  sx={{ textAlign: 'left', padding: '15px'}}>
+        <Grid item xs={12} sm={7} md={6.5} lg={7} xl={7}  sx={{ textAlign: 'left', padding: '15px'}}>
           <Grid container spacing={1}>
             <Grid item xs={12} sm={9} md={9} lg={9} xl={7}>
               <Stack spacing={2}>
@@ -26,7 +26,7 @@ function Home () {
                   Léonce, AMI's President
                 </Heading>
                 <Text fontSize='6xl'>
-                  AMI is an association of young people living at Ambohitsilaozana in Madagascar. 
+                  AMI is an association of young people living at Ambohitsilaozana in Madagascar.
                   The association aim to help the kids in needs whether in terms of scholarship or schools equipments. 
                   One of the reason why AMI is created is, many children stoped school due to familly issue, sometimes lack motivation or not enough many to pursue the school.
                   Then AMI was created to help those kids with what we have.
