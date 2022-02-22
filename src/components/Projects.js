@@ -4,7 +4,7 @@ import { actus } from '../utils/_data'
 import AlignList from './mui/AlignListItem'
 import { AspectRatio } from '@chakra-ui/react'
 import './styles/projects.css'
-import { Text, Stack, Heading } from '@chakra-ui/react'
+import { Text, Stack, Heading, Image } from '@chakra-ui/react'
 import { getActions, addAction, generateUID } from '../utils/api'
 import { useEffect, useState } from 'react'
 import { styled } from '@mui/material/styles';
@@ -81,8 +81,14 @@ function Projects () {
       {actionsS.map(actu => (
         <Grid key={actu.key} container className='vid' marginTop={1} textAlign='left'>
           <Grid item xs={3} sm={2} md={2} lg={2} xl={1}>
-            <img alt={actu.picture} src={actu.picture} width='100%' />
+            <AspectRatio maxW='400px' ratio={1}>
+              <Image
+                src={`https://caj6tw.deta.dev/download/${actu.picture}`}
+                objectFit='cover'
+              />
+            </AspectRatio>
           </Grid>
+
           <Grid item xs={9} sm={10} md={10} lg={10} xl={11}>
             <Stack spacing={0} padding='5%'>
               <Heading as='h2' size='2xl' isTruncated>

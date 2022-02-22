@@ -45,6 +45,9 @@ function Home () {
             <Grid item xs={12} sm={2} md={3} lg={3} xl={3} >
               <img alt='logo-ami' src='./logoAmi.png' width='100%'/>
             </Grid>
+
+
+
           </Grid>
         </Grid>
 
