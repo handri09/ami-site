@@ -61,11 +61,6 @@ function Nav (props) {
             <Button size='small' variant={props.isTeams && 'outlined'} onClick={() => props.teams()}>Teams</Button>
             <Button size='small' variant={props.isContact && 'outlined'} onClick={() => props.contact()}>Contact</Button>
           </Grid>
-          {/*<Grid item container xs={0.5} sm={0.5} md={0.5} lg={1} xl={1} sx={{ textAlign: 'flex-end', justifyContent: 'flex-end'}}>
-            <Grid item>
-              <Avatar sx={{ border:1, borderColor: 'red'}}>Off</Avatar>
-            </Grid>
-        </Grid>*/}
         </Stack>
       </Grid>
     </Grid>

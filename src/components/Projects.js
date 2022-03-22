@@ -80,8 +80,8 @@ function Projects () {
 
       {actionsS.map(actu => (
         <Grid key={actu.key} container className='vid' marginTop={1} textAlign='left'>
-          <Grid item xs={3} sm={2} md={2} lg={2} xl={1}>
-            <AspectRatio maxW='400px' ratio={1}>
+          <Grid item xs={12} sm={2} md={3} lg={2} xl={2}>
+            <AspectRatio maxW='300px' ratio={1}>
               <Image
                 src={`https://caj6tw.deta.dev/download/${actu.picture}`}
                 objectFit='cover'
@@ -89,12 +89,12 @@ function Projects () {
             </AspectRatio>
           </Grid>
 
-          <Grid item xs={9} sm={10} md={10} lg={10} xl={11}>
+          <Grid item xs={12} sm={10} md={9} lg={10} xl={10} >
             <Stack spacing={0} padding='5%'>
-              <Heading as='h2' size='2xl' isTruncated>
+              <Heading as='h2' size='2xl' isTruncated className='text-blue-700 font-mono text-3xl font-bold'>
                 {actu.name}
               </Heading>
-              <Text fontSize='2xl' textAlign='adjust'>
+              <Text fontSize='2xl' textAlign='adjust' className='font-mono leading-6'>
                 {actu.story}
               </Text>
             </Stack>
