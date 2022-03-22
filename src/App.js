@@ -1,9 +1,5 @@
-import './App.css';
-import { 
-  Container, Divider, Grid, Stack,
-  Button, Avatar
- } from '@mui/material'
-import { useState } from 'react'
+// import './App.css';
+import {Container} from '@mui/material'
 import { Team } from "./pages"
 
 // About
@@ -12,63 +8,19 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Teams from './components/Teams'
+import { Routes, Route} from "react-router-dom";
 
 function App() {
-  const [home, setHome] = useState(true)
-  const [about, setAbout] = useState(false)
-  const [projects, setProjects] = useState(false)
-  const [teams, setTeams] = useState(false)
-  const [contact, setContact] = useState(false)
-  
-  const onClear = () => {
-    setHome(false)
-    setAbout(false)
-    setProjects(false)
-    setTeams(false)
-    setContact(false)
-    return true
-  }
   return (
     <Container maxWidth='lg' sx={{ textAlign: 'center' }}>
-      <Team />
-
-      {/* <Nav 
-        home={()=> { onClear(); setHome(true) }}
-        about={() => { onClear(); setAbout(true)}} 
-        projects={() => {onClear(); setProjects(true)}} 
-        teams={() => { onClear(); setTeams(true)}}     
-        contact={() => { onClear(); setContact(true)}} 
-        isHome={home}
-        isProjects={projects}
-        isTeams={teams}
-        isContact={contact}
-        />
-
-      {home ? <Home/> : ''}
-      {projects ? <Projects/> : ''}
-      {teams ? <Teams/> : ''}
-      {contact ? <Contact/> : ''} */}
-
+      <Routes>
+        <Route path="/ami-site/" exact element={<Home/>} />
+        <Route path="/ami-site/activities/" exact element={<Projects/>} />
+        <Route path="/ami-site/contact" exact element={<Contact />} />
+        <Route path="/ami-site/team" exact element={<Team />} />
+      </Routes>
     </Container>
   );
 }
-
-function Nav (props) {
-  return(
-    <Grid container className='nav' sx={{ textAlign: 'center', justifyContent: 'center' }}>
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ textAlign: 'center', justifyContent: 'center' }}>
-        <Stack direction='row' divider={<Divider />} spacing={1} sx={{ textAlign: 'center', justifyContent: 'center', bgcolor: 'white' }} >
-          <Grid item xs={12} sm={12} md={12} lg={10} xl={10}>
-            <Button size='small' variant={props.isHome && 'outlined'} onClick={() => props.home()}>Home</Button>
-            <Button size='small' variant={props.isProjects && 'outlined'} onClick={() => props.projects()}>Activities</Button>
-            <Button size='small' variant={props.isTeams && 'outlined'} onClick={() => props.teams()}>Teams</Button>
-            <Button size='small' variant={props.isContact && 'outlined'} onClick={() => props.contact()}>Contact</Button>
-          </Grid>
-        </Stack>
-      </Grid>
-    </Grid>
-  );
-}
-
 
 export default App;
