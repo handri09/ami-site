@@ -4,6 +4,7 @@ import {
   Button, Avatar
  } from '@mui/material'
 import { useState } from 'react'
+import { Team } from "./pages"
 
 // About
 import About from './components/About'
@@ -12,7 +13,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Teams from './components/Teams'
 
-export default function App() {
+function App() {
   const [home, setHome] = useState(true)
   const [about, setAbout] = useState(false)
   const [projects, setProjects] = useState(false)
@@ -29,7 +30,9 @@ export default function App() {
   }
   return (
     <Container maxWidth='lg' sx={{ textAlign: 'center' }}>
-      <Nav 
+      <Team />
+
+      {/* <Nav 
         home={()=> { onClear(); setHome(true) }}
         about={() => { onClear(); setAbout(true)}} 
         projects={() => {onClear(); setProjects(true)}} 
@@ -44,7 +47,7 @@ export default function App() {
       {home ? <Home/> : ''}
       {projects ? <Projects/> : ''}
       {teams ? <Teams/> : ''}
-      {contact ? <Contact/> : ''}
+      {contact ? <Contact/> : ''} */}
 
     </Container>
   );
@@ -68,3 +71,4 @@ function Nav (props) {
 }
 
 
+export default App;
