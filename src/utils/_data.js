@@ -68,11 +68,13 @@ export const teams = [
     role: 'Communication & Relation responsible',
     story: ' A leader, a friend, a family who is doing his best to help his Malagasy fellow.',
     url : 'faniry',
-  },{
-    id: generateUID(),
-    name: 'Randrianavony Tsitohaina Harimanana',
-    role: 'Communication & Relation responsible',
-    story: ' A leader, a friend, a family who is doing his best to help his Malagasy fellow.',
-    url : 'tsito',
   }
 ]
+
+// ,{
+//   id: generateUID(),
+//   name: 'Randrianavony Tsitohaina Harimanana',
+//   role: 'Communication & Relation responsible',
+//   story: ' A leader, a friend, a family who is doing his best to help his Malagasy fellow.',
+//   url : 'tsito',
+// }

@@ -1,10 +1,10 @@
 // import './App.css';
 import {Container} from '@mui/material'
-import { Team } from "./pages"
+import { Team, Home } from "./pages"
 
 // About
 import About from './components/About'
-import Home from './components/Home'
+// import Home from './components/Home'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Teams from './components/Teams'
