@@ -1,11 +1,12 @@
 import React from "react";
-import {NavBar} from "../../components"
+import {NavBar} from "./components"
+import {Teams} from "./components"
 
 function Team() {
   return (
     <>
       <NavBar />
-      <h1>Team</h1>
+      <Teams />
     </>
   );
 }
