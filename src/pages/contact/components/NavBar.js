@@ -8,7 +8,7 @@ const opened = "border-green-500 text-green-500 border-2 rounded-md p-3 px-5"
 function NavBar() {
   return (
     <div className={`
-      flex antialiased sticky 
+      flex antialiased sticky bg-white
       w-full top-0 h-20 z-20 text-xl font-mono 
       shadow-md justify-end`}>
 
