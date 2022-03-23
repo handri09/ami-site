@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/ami-site/static/css/main.21ae5741.css",
-    "main.js": "/ami-site/static/js/main.2db6049f.js",
-    "static/js/787.1fde4085.chunk.js": "/ami-site/static/js/787.1fde4085.chunk.js",
+    "main.css": "/ami-site/static/css/main.1812def8.css",
+    "main.js": "/ami-site/static/js/main.4c5f239f.js",
     "static/media/gp1.JPG": "/ami-site/static/media/gp1.2c4d9296bd6c2e7b018b.JPG",
     "static/media/haja.png": "/ami-site/static/media/haja.dccb603abf887e37281a.png",
     "static/media/gp2.jpg": "/ami-site/static/media/gp2.e9fa63f697acfa739434.jpg",
+    "static/media/LOGO_.png": "/ami-site/static/media/LOGO_.b77397e020bcb40f4a7e.png",
     "static/media/leonce.jpg": "/ami-site/static/media/leonce.4d902414bccd7eddf26a.jpg",
     "static/media/elie.jpg": "/ami-site/static/media/elie.17b36eaa51549c8e6ef2.jpg",
     "static/media/faniry.jpeg": "/ami-site/static/media/faniry.3a0d19a0b0cb3e65cc74.jpeg",
     "index.html": "/ami-site/index.html",
-    "main.21ae5741.css.map": "/ami-site/static/css/main.21ae5741.css.map",
-    "main.2db6049f.js.map": "/ami-site/static/js/main.2db6049f.js.map",
-    "787.1fde4085.chunk.js.map": "/ami-site/static/js/787.1fde4085.chunk.js.map"
+    "main.1812def8.css.map": "/ami-site/static/css/main.1812def8.css.map",
+    "main.4c5f239f.js.map": "/ami-site/static/js/main.4c5f239f.js.map"
   },
   "entrypoints": [
-    "static/css/main.21ae5741.css",
-    "static/js/main.2db6049f.js"
+    "static/css/main.1812def8.css",
+    "static/js/main.4c5f239f.js"
   ]
 }
