@@ -1,17 +1,10 @@
-// import './App.css';
 import {Container} from '@mui/material'
-import { Team, Home, Activities, Contact } from "./pages"
-
-// About
-import About from './components/About'
-// import Home from './components/Home'
-import Projects from './components/Projects'
-import Teams from './components/Teams'
 import {Routes, Route} from "react-router-dom";
+import { Team, Home, Activities, Contact } from "./pages"
 
 function App() {
   return (
-    <Container maxWidth='lg' sx={{ textAlign: 'center' }}>
+    <Container maxWidth='xxl' sx={{ textAlign: 'center' }}>
       <Routes>
         <Route path="/ami-site/" exact element={<Home/>} />
         <Route path="/ami-site/activities/" exact element={<Activities/>} />
