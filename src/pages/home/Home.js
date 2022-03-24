@@ -1,11 +1,12 @@
 import React from "react";
-import {NavBar, Page} from "./components"
+import {NavBar, Page, Presentation} from "./components"
 
 function Home() {
   return (
     <>
       <NavBar />
-      <Page />
+      <Presentation />
+      {/* <Page /> */}
     </>
   );
 }
