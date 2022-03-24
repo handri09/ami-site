@@ -21,7 +21,7 @@ function Presentation() {
       
       <div className="flex md:flex-row justify-center items-center h-screen w-full mt-10 flex-col">
         <div className="flex w-4/5 md:w-1/3 justify-center items-center"><img src={logo} /></div>
-        <div className="flex flex-col justify-center items-center w-4/5 md:w-1/2">
+        <div className="flex flex-col justify-center items-center w-4/5 md:w-4/5">
           <h1 className='text-3xl border-b-2 border-b-gray-600 px-20 py-2'>Léonce, president of AMI</h1>
           <p className="w-full md:w-2/3 text-xl py-3 text-justify">
             AMI is an association of young people living at Ambohitsilaozana in Madagascar.
