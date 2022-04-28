@@ -1,4 +1,3 @@
-import {Container} from '@mui/material'
 import {Routes, Route} from "react-router-dom";
 import { Team, Home, Activities, Contact } from "./pages"
 import {NavBar} from "./components"
@@ -7,10 +6,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/ami-site/" exact element={<Home/>} />
-        <Route path="/ami-site/activities/" exact element={<Activities/>} />
-        <Route path="/ami-site/contact" exact element={<Contact />} />
-        <Route path="/ami-site/team" exact element={<Team />} />
+        <Route path='/ami-site/' element={<NavBar/>}>
+          <Route index element={<Home/>} />
+          <Route path="activities" element={<Activities/>} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="team" element={<Team />} />  
+        </Route>
       </Routes>
     </>
   );
