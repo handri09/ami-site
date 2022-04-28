@@ -1,4 +1,6 @@
-export {default as Team} from "./team/Team"
-export {default as Home} from "./home/Home"
-export {default as Activities} from "./activities/Activities"
-export {default as Contact} from "./contact/Contact"
+import Team from "./team/Team"
+import Home from "./home/Home"
+import Activities from "./activities/Activities"
+import Contact from "./contact/Contact"
+
+export {Team, Home, Activities, Contact}
