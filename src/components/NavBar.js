@@ -8,13 +8,7 @@ const opened = "border-green-500 text-green-500 border-white border-2 rounded-md
 function NavBar() {
   return (
     <div className={`w-full top-0 flex antialiased justify-end sticky z-10 text-xl font-mono shadow-md`}>
-<<<<<<< HEAD
-
       <div className="flex w-1/2 px-10 h-20"><img className={``} src={logo} alt={`ami`}/></div>
-      
-=======
-      <div className="flex w-1/2 px-10"><img className={``} src={logo} alt={`ami`}/></div>
->>>>>>> c75903207b083063168cce339c19b75fac3fdec5
       <div className="flex w-1/2 gap-16 items-center justify-center">
         <Link to="/ami-site/" className={styling}>Home</Link>
         <Link to="/ami-site/activities" className={styling}>Activities</Link>
