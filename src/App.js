@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom";
-import { Team, Home, Activities, Contact } from "./pages"
+import { Team, Home, Activities, Contact, NoMatch } from "./pages"
 import {NavBar} from "./components"
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
           <Route path="activities" element={<Activities/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="team" element={<Team />} />  
+          <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </>
