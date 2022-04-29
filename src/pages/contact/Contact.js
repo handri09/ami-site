@@ -1,10 +1,9 @@
 import React from 'react'
-import { NavBar, Page } from './components'
+import {Page } from './components'
 
 function Contact() {
   return (
     <>
-      <NavBar/>
       <Page />
     </>
   )
