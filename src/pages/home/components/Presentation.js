@@ -5,14 +5,13 @@ import logo from "../../../assets/LOGO_.png"
 function Presentation() {
   return (
     <>
-      <div className="flex justify-center items-center h-screen w-full">
-        <div className="w-full h-full">
-          <h1 className="m-5 md:m-2 lg:m-5 font-bold text-xl md:text-2xl lg:text-2xl font-mono text-green-600">Mr. Léonce, AMI's president.</h1>
-          <AspectRatio ratio={1}>
+      <div className="flex justify-center items-center w-full">
+        <div className="flex flex-col w-full">
+          <h1 className="flex justify-center m-5 md:m-2 lg:m-5 font-bold text-2xl md:text-3xl lg:text-4xl font-mono text-green-600">Mr. Léonce, AMI's president.</h1>
+          <AspectRatio ratio={1} className={`flex w-full border-4`} style={{ maxHeight:"80vh" }}>
             <iframe
               title='Léonce'
               src='https://www.youtube.com/embed/QMyEdgGEfIg'
-              style={{ height:"80vh" }}
               allowFullScreen
             />
           </AspectRatio>
@@ -26,7 +25,7 @@ function Presentation() {
           <p className="w-full md:w-2/3 text-xl py-3 text-justify">
             AMI is an association of young people living at Ambohitsilaozana in Madagascar.
             The association aim to help the kids in needs whether in terms of scholarship or schools equipments. 
-            One of the reason why AMI is created is, many children stoped school due to familly issue, sometimes lack motivation or not enough many to pursue the school.
+            One of the reason why AMI is created is, many children drop out due to familly issue, sometimes lack motivation or not enough many to pursue the school.
             Then AMI was created to help those kids with what we have.
           </p>
           <p className="w-full md:w-2/3 text-xl py-3 text-justify">If you may help, below is the IBAN</p>
