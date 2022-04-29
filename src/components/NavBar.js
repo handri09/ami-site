@@ -10,8 +10,8 @@ function NavBar() {
   return (
     <>
       <div className={`w-full top-0 flex antialiased justify-end sticky text-xl lg:text-2xl font-mono shadow-md bg-white z-10`}>
-        <div className="flex pl-10 w-1/2 h-20 border-2 border-green-500"><img className={``} src={logo} alt={`ami`}/></div>
-        <div className="flex w-1/2 gap-10 items-center justify-center border-2 border-blue-500">
+        <div className="flex pl-10 w-1/2 h-20"><img className={``} src={logo} alt={`ami`}/></div>
+        <div className="flex w-1/2 gap-10 items-center justify-center">
           <Link to="/ami-site/" className={styling}>Home</Link>
           <Link to="/ami-site/activities" className={styling}>Activities</Link>
           <Link to="/ami-site/team" className={styling}>Team</Link>
