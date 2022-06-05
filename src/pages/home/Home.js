@@ -31,7 +31,7 @@ function Home() {
             </AspectRatio>
             <div className={`w-full flex flex-col text-justify py-5 px-10 gap-3`}>
               <p className="">
-                AMI is an association of young people living at Ambohitsilaozana in Madagascar.
+                AMI is an association of people living at Ambohitsilaozana in Madagascar.
                 The association aim to help the kids in needs whether in terms of scholarship or schools equipments. 
                 One of the reason why AMI is created is, many children drop out due to familly issue, sometimes lack motivation or not enough many to pursue the school.
                 Then AMI was created to help those kids with what we have.
