@@ -1,6 +1,7 @@
 import React from 'react';
 import { Presentation, Footer } from '../../components';
 import {AspectRatio} from '@chakra-ui/react';
+import logo from '../../assets/logoAmi.png';
 
 function Home() {
   return (
@@ -10,8 +11,13 @@ function Home() {
         gap-2
         text-2xl text-gray-700
         `}>
-          <div className={`w-1/4 h-screen bg-green-50`}>
-            <h1 className={`flex justify-center items-center p-2`}>Contact</h1>
+          <div className={`w-1/4 h-full pb-5 flex flex-col gap-3 bg-green-50`}>
+            <h1 className={`flex justify-center items-center p-2 font-bold`}>Contact</h1>
+            <div className='px-20'><img src={logo} alt='ami' className='w-full' /></div>
+            <div className='flex flex-col px-5 gap-3'>
+              <p>Phone: 034 27 536 51</p>
+              <p>Address: Ambohitsilaozana</p>
+            </div>
           </div>
 
           <div className={`w-2/4 flex flex-col gap-3 h-screen bg-red-50 text-2xl`}>
@@ -23,7 +29,7 @@ function Home() {
                 allowFullScreen
               />
             </AspectRatio>
-            <div className={`w-full flex flex-col text-justify p-10 gap-3`}>
+            <div className={`w-full flex flex-col text-justify py-5 px-10 gap-3`}>
               <p className="">
                 AMI is an association of young people living at Ambohitsilaozana in Madagascar.
                 The association aim to help the kids in needs whether in terms of scholarship or schools equipments. 
