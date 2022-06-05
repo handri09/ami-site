@@ -1,2 +1,4 @@
 import NavBar from './NavBar'
-export {NavBar}
+import Footer from './Footer'
+
+export { NavBar, Footer }
