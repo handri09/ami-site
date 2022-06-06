@@ -24,7 +24,12 @@ function Activities() {
                   key={actu}
                   className={`w-full bg-white flex gap-3 border-2 hover:border-gray-300 border-white`}>
                   <div className={`w-1/4`}><img src={logo} alt='logo' className='' /></div>
-                  <div className=''>Help {actu}</div>
+                  <div className='flex flex-col'>
+                    <div className='text-xl font-bold text-gray-500'>Help {actu}</div>
+                    <p>We hope AMI will help more and more kids that are in needs.
+                    We hope AMI will help more and more kids that are in needs.
+                    We hope AMI will help more and more kids that are in needs.</p>
+                  </div>
                 </div>
               ))}
           </div>
