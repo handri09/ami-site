@@ -16,13 +16,13 @@ function Team ({team}) {
   console.log(images["faniry"])
   return (
     <div className="flex w-full my-5 shadow-md">
-      <div className="flex items-center w-1/2 h-full">
-        <img src={images[url]} alt=""/>
+      <div className="flex items-center justify-center w-32 h-full border border-black">
+        <img src={images[url]} alt="" className='w-full' />
       </div>
-      <div className="w-1/2">
-        <p className="text-gray-500 text-2xl font-weight border border-b-gray-500 p-2 m-1">{name}</p>
-        <p className="text-gray-600 italic m-2">{role}</p>
-        <p className="text-justify p-3">{story}</p>
+      <div className="w-full">
+        <p className="text-gray-500 text-2xl font-weight p-2">{name}</p>
+        <p className="text-gray-600 italic p-2">{role}</p>
+        <p className="text-justify p-2">{story}</p>
       </div>
     </div>
   );

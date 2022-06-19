@@ -16,8 +16,8 @@ function NavBar() {
 
         <Link
           to='/ami-site/'
-          className={`flex pl-5 md:pl-10 w-full md:w-1/3 xl:w-1/2 h-20`}>
-          <img className={`h-20`} src={logo} alt={`ami`} />
+          className={`flex pl-5 md:pl-10 w-full md:w-1/3 xl:w-1/2 h-full`}>
+          <img className={`h-16`} src={logo} alt={`ami`} />
         </Link>
 
         <div className='flex flex-col md:flex-row w-full md:w-2/3 xl:w-1/2 gap-2 md:gap-3 lg:gap-5 xl:gap-10 items-center justify-center'>

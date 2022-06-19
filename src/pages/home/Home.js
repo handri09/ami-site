@@ -7,20 +7,17 @@ function Home() {
   return (
     <>
       <div className={`
-        w-full flex
+        w-full h-full flex
         gap-2
         text-2xl text-gray-700
         `}>
-          <div className={`w-1/4 h-full pb-5 flex flex-col gap-3 bg-green-50`}>
-            <h1 className={`flex justify-center items-center p-2 font-bold`}>Contact</h1>
-            <div className='px-20'><img src={logo} alt='ami' className='w-full' /></div>
+          <div className={`w-1/4 h-full pb-5 flex flex-col gap-3 bg-green-50 p-3`}>
+            <div className=''><img src={logo} alt='ami' className='w-full' /></div>
             <div className='flex flex-col px-5 gap-3'>
-              <p>Phone: 034 27 536 51</p>
-              <p>Address: Ambohitsilaozana</p>
             </div>
           </div>
 
-          <div className={`w-2/4 flex flex-col gap-3 h-screen bg-red-50 text-2xl`}>
+          <div className={`w-2/4 flex flex-col gap-3 h-full bg-red-50 text-xl`}>
             <h1 className={`text-center p-3 font-bold`}>Mr. Léonce, AMI's president.</h1>
             <AspectRatio ratio={1} className={`flex w-full border border-white`} style={{ maxHeight:"50vh" }}>
               <iframe
